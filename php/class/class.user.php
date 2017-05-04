@@ -35,7 +35,7 @@ class USER
             $stmt->bindparam(":last_name", $last_name);
             $stmt->bindparam(":first_name", $first_name);
             $stmt->bindparam(":username", $username);
-            $stmt->bindparam(":password", sha1($password));
+            $stmt->bindparam(":password", password_hash($password, PASSWORD_BCRYPT));
             $stmt->bindparam(":email", $email);
             $stmt->execute();
             return $stmt;
@@ -52,7 +52,7 @@ class USER
             $userRow = $stmt->fetch(PDO::FETCH_ASSOC);
 
             if ($stmt->rowCount() == 1) {
-                if ($userRow['password'] == sha1($password)) {
+                if(password_verify($password, $userRow['password'])) {
                     $_SESSION['userSession'] = $userRow['user_id'];
                     $_SESSION['isAdmin'] = true; // Every user is an admin for this assignment
                     return true;
