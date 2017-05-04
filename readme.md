@@ -8,7 +8,7 @@ information from a database about craft breweries in Maine.
 
 ## Introduction
 
-#### Structure
+### Structure
 
 All client-facing pages are rendered from PHP by the server. 
 The client-side pages use a lot of JS for the forms; in 
@@ -27,7 +27,7 @@ pages are loaded into the window. You may find these files
 in the [`/partials/`]("/partials/") directory.
 
 
-#### API
+### API
 
 The benefit of the API is that you don't need my frontend to
 query or alter data. For example, try going to 
