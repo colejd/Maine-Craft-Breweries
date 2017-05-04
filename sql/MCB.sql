@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 04, 2017 at 07:55 PM
+-- Generation Time: May 04, 2017 at 10:59 PM
 -- Server version: 5.6.28
 -- PHP Version: 7.0.10
 
@@ -59,9 +59,7 @@ INSERT INTO `beer` (`beer_id`, `beer_name`, `beer_type_id`, `brewery_id`, `ABV`,
 (14, 'Oops! All Yeast', 11, 4, '0.0', '30.0', 'For adventurous types, this "beer" is from the samples taken off the production line that fail to meet quality standards.', 1),
 (15, 'Blue Moon', 2, 4, '5.4', '9.0', 'Normal Blue Moon beer with no alterations.', 1),
 (16, 'Very Nearly Blue Moon', 3, 4, '10.0', '9.1', 'A homebrew attempt at Blue Moon by the owner of the bar.', 1),
-(28, 'Smiling Irish Bastard', 5, 15, '6.0', '45.6', 'Our brewers\' favorite staple beer is copper in color with moderate maltiness and features grapefruit hop character. This pale is brewed with traditional Cascade hops from the Pacific Northwest that linger on your palette. The name says it all: American strong, like Officer Bernie Welch, a legend in the Bangor police force. From Freeses’ Department Store through “Devil’s Half Acre,” with his billy club in hand, he wiped the smile off more than one hooligan’s face while keeping Bangor’s downtown safe.', 1),
-(29, 'Blue Moon 2', 2, 3, '5.4', '10.0', 'Completely made up.', 1),
-(32, 'Beer', 1, 1, '0.0', '0.0', '', 1);
+(28, 'Smiling Irish Bastard', 5, 15, '6.0', '45.6', 'Our brewers\' favorite staple beer is copper in color with moderate maltiness and features grapefruit hop character. This pale is brewed with traditional Cascade hops from the Pacific Northwest that linger on your palette. The name says it all: American strong, like Officer Bernie Welch, a legend in the Bangor police force. From Freeses’ Department Store through “Devil’s Half Acre,” with his billy club in hand, he wiped the smile off more than one hooligan’s face while keeping Bangor’s downtown safe.', 1);
 
 -- --------------------------------------------------------
 
@@ -174,7 +172,7 @@ CREATE TABLE `MCB_users` (
 --
 
 INSERT INTO `MCB_users` (`user_id`, `last_name`, `first_name`, `username`, `password`, `email_address`) VALUES
-(2, 'Cole', 'Jonathan', 'jon', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 'test@test.com');
+(5, 'Cole', 'Jon', 'jon', '$2y$10$TuGgUCIWS1gLwaiuNpFhiuyR643EAQ3hGM/oPT', 'test@test.com');
 
 -- --------------------------------------------------------
 
@@ -873,7 +871,7 @@ ALTER TABLE `ZIP`
 -- AUTO_INCREMENT for table `beer`
 --
 ALTER TABLE `beer`
-  MODIFY `beer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `beer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 --
 -- AUTO_INCREMENT for table `beer_type`
 --
@@ -893,7 +891,7 @@ ALTER TABLE `location`
 -- AUTO_INCREMENT for table `MCB_users`
 --
 ALTER TABLE `MCB_users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `retail_outlet`
 --
