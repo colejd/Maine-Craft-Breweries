@@ -62,6 +62,7 @@ else if ($searchType == "type") {
                   INNER JOIN beer_type ON (beer.beer_type_id = beer_type.beer_type_id)
                   INNER JOIN brewery ON (beer.brewery_id = brewery.brewery_id)
                   WHERE beer.beer_type_id = :id
+                  GROUP BY brewery.brewery_id
                   ";
 
     try {
