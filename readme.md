@@ -2,9 +2,7 @@
 > Jonathan Cole <br /> Spring 2017
 
 This my implementation of the final project for SIE557 
-at the University of Maine. It is a website built using
-PHP, HTML and JS, and is meant for viewing and editing 
-information from a database about craft breweries in Maine.
+at the University of Maine. 
 
 ## Introduction
 
@@ -54,4 +52,4 @@ To get started, visit [http://localhost:8888/mcb/page/index.php](http://localhos
 ## Attribution
 
 This project shares a small amount of code from another project
-I worked on for SIE510. You can find that project [here](https://github.com/sixtycycles/airwhale).
+I am working on for SIE510. You can find that project [here](https://github.com/sixtycycles/airwhale).
