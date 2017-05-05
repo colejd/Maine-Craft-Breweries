@@ -57,11 +57,11 @@ class USER
                     $_SESSION['isAdmin'] = true; // Every user is an admin for this assignment
                     return true;
                 } else {
-                    header("Location: ../page/index.php?error");
+                    header("Location: ../page/login.php?error");
                     exit;
                 }
             } else {
-                header("Location: ../page/index.php?error");
+                header("Location: ../page/login.php?error");
                 exit;
             }
         } catch (PDOException $ex) {
