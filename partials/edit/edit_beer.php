@@ -37,7 +37,7 @@
     </div>
 
     <div class="form-group">
-        <label for="brewery-selector">Beer Type</label>
+        <label for="brewery-selector">Brewery</label>
         <select class="form-control" id='brewery-selector' name='brewery-selector'>
             <?php
             // Populate the dropdown with the name/id combination of each beer type
