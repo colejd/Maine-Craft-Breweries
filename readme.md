@@ -53,3 +53,8 @@ To get started, visit [http://localhost:8888/mcb/page/index.php](http://localhos
 
 This project shares a small amount of code from another project
 I am working on for SIE510. You can find that project [here](https://github.com/sixtycycles/airwhale).
+
+
+## Walkthrough
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/eYTtCWVZ2fs/0.jpg)](http://www.youtube.com/watch?v=eYTtCWVZ2fs "Maine Craft Breweries")
