@@ -11,7 +11,7 @@
 
     <!-- Retail type ID selector -->
     <div class="form-group">
-        <label for="type-selector">Search Term</label>
+        <label for="type-selector">Type</label>
         <select class="form-control" id='type-selector' name='type-selector'>
             <?php
             // Populate the dropdown with the name/id combination of each beer type
